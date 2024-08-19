@@ -285,11 +285,19 @@ agents.
         <div class="content has-text-justified">
           <p>
             Our proposed approach integrates a neural network-based control policy with Integral Control Barrier Functions (ICBF) to ensure safety and minimize deadlocks in multi-agent systems. The approach is divided into two main phases: Training and Execution.
-
+          </p>
+          
+          <!-- Training Phase -->
+          <p>
             <strong>Training Phase:</strong> In this phase, a neural network-based controller and a safety mechanism (ICBF) are trained together. The process starts with a dataset containing various situations (states) and the actions (controls) taken in those situations. The neural network learns to predict the right actions, while the ICBF ensures these actions are safe, avoiding collisions and respecting the physical limitations of the agents. The training involves backpropagation, where errors are calculated when actions are unsafe or ineffective. These errors are used to update the network and ICBF until they can reliably produce safe and effective actions.
-
+          </p>
+          
+          <!-- Execution Phase -->
+          <p style="margin-top: 20px;">
             <strong>Execution Phase:</strong> Once training is complete, the learned controller and safety mechanism are deployed. During execution, the agents use the neural network to decide actions as they move towards their goals. The ICBF checks these actions to ensure they remain safe. If a potential collision is detected, the ICBF overrides the neural network's decision and applies a more robust strategy called Model Predictive Control (MPC). Additionally, a deadlock minimization mechanism is employed to prevent agents from getting stuck, ensuring smooth navigation.
-
+          </p>
+          
+          <p>
             This combination of training and execution ensures that agents can navigate complex environments safely and efficiently, even with many agents and limited movement capabilities.
           </p>
             
