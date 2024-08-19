@@ -176,6 +176,8 @@
   </div>
 </section>
 
+
+
 <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -294,19 +296,49 @@ agents.
           
           <!-- Execution Phase -->
           <p style="margin-top: 20px;">
-            <strong>Execution Phase:</strong> Once training is complete, the learned controller and safety mechanism are deployed. During execution, the agents use the neural network to decide actions as they move towards their goals. The ICBF checks these actions to ensure they remain safe. If a potential collision is detected, the ICBF overrides the neural network's decision and applies a more robust strategy called Model Predictive Control (MPC). Additionally, a deadlock minimization mechanism is employed to prevent agents from getting stuck, ensuring smooth navigation.
+            <strong>Execution Phase:</strong> Once training is complete, the learned controller and safety mechanism are deployed. During execution, the agents use the neural network to decide actions as they move towards their goals. The ICBF checks these actions to ensure they remain safe. If a potential collision is detected, the ICBF overrides the neural network's decision and applies a more robust strategy called Model Predictive Control (MPC). Additionally, a deadlock minimization mechanism is employed to prevent agents from getting stuck, ensuring smooth navigation. 
+            This combination of training and execution ensures that agents can navigate complex environments safely and efficiently, even with many agents and limited movement capabilities.
+          
           </p>
           
-          <p>
-            This combination of training and execution ensures that agents can navigate complex environments safely and efficiently, even with many agents and limited movement capabilities.
-          </p>
+          
+            
             
       </div>
     </div>
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Environments. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Environments</h2>
+        <figure class="image is-centered">
+          <img src="./static/images/env.png" alt="Environments">
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+            The experiments in this research were conducted in two distinct environments: an empty environment and a maze environment. These environments were selected to test the robustness and scalability of the proposed control framework under different levels of complexity.
+          </p>
 
+          <p>
+            <strong>Empty Environment:</strong> In the empty environment, agents are placed in an open space without any obstacles. This setup allows for a straightforward assessment of the control policy's ability to navigate agents towards their targets without any interference. It serves as a baseline to evaluate the basic functionality of the proposed approach, ensuring that it can handle simple scenarios efficiently and avoid unnecessary collisions.
+          </p>
+
+          <p>
+            <strong>Maze Environment:</strong> The maze environment introduces a more complex and challenging scenario where agents must navigate through a labyrinth with multiple walls and obstacles. This environment is designed to test the control framework's ability to handle more intricate navigation tasks, where the likelihood of collisions and deadlocks increases significantly. The maze environment is crucial for evaluating the scalability and safety of the approach, especially when dealing with a large number of agents in a confined space.
+          </p>
+
+          <p>
+            These two environments were chosen to demonstrate the effectiveness of the proposed approach in both simple and complex scenarios. The results from these environments provide insights into the approach's ability to maintain safety, avoid collisions, and minimize deadlocks across different levels of environmental complexity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!--     <!-- Paper video. -->
