@@ -296,7 +296,7 @@ agents.
           
           <!-- Execution Phase -->
           <p style="margin-top: 20px;">
-            <strong>Execution Phase:</strong> To address these two fundamental limitations, the second step involves developing theoretical frameworks that is augmented to the NN policy (in the first step) for avoiding collisions and minimizing deadlocks. To provide complete guarantees on the collision avoidance problem, we shift to a decentralized optimization-based control policy termed MPC-ICBF whenever we predict a collision in future time steps with its neighbors using the learned NN policy. Next, we analyze the deadlock problem by writing the multi-agent control problem as a QP problem. Then, we write the KKT conditions that provide sufficient conditions for the optimal control problem. Consequently, we draw an analogy between this deadlock problem and the problem of minimizing non-convex loss functions. Finally, we propose a method to modify the control input to ensure that the deadlocks are minimized. 
+            <strong>Execution Phase:</strong> To address these limitations, the second step involves developing theoretical frameworks to augment the NN policy from the first step, ensuring collision avoidance and minimizing deadlocks. For complete collision avoidance guarantees, we switch to a decentralized MPC-ICBF control policy whenever a potential collision with neighbors is detected using the NN policy. We draw an analogy between deadlocks and minimizing non-convex loss functions and propose a method to modify the control input to reduce deadlocks. 
             
           
           </p>
