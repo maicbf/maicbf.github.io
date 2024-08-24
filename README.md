@@ -8,7 +8,7 @@
     ·
     <a href="https://engineering.virginia.edu/faculty/rohan-chandra"><strong>Rohan Chandra</strong></a><sup>3</sup>
     ·
-    <a href="https://sites.utexas.edu/ebakolas/"><strong>Efstathios Bakolasg</strong></a><sup>1</sup>
+    <a href="https://sites.utexas.edu/ebakolas/"><strong>Efstathios Bakolas</strong></a><sup>1</sup>
     
 </p>
 
@@ -17,7 +17,7 @@
 </p>
    <h3 align="center">
 
-   [![arXiv](https://img.shields.io/badge/arXiv-2408.10154-blue?logo=arxiv&color=%23B31B1B)](https://maicbf.github.io/) [![ProjectPage](https://img.shields.io/badge/Project_Page-MAICBF-blue)]([https://loopsplat.github.io/](https://maicbf.github.io/))
+   [![arXiv](https://img.shields.io/badge/arXiv-2408.10154-blue?logo=arxiv&color=%23B31B1B)](https://maicbf.github.io/) [![ProjectPage](https://img.shields.io/badge/Project_Page-MAICBF-blue)]([https://maicbf.github.io/](https://maicbf.github.io/))
   <div align="center"></div>
 </p>
 
